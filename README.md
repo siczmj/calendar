@@ -15,7 +15,7 @@ clean the code and published. I hope to it will be useful.
 
 ## Usage
 
-### Prepare build.gradle
+### Download
 
 There is enough to download only the calendarview-library which contains all neccessary files. 
 
@@ -31,7 +31,7 @@ There is enough to download only the calendarview-library which contains all nec
             />
 ```
 
-### Implement CalendarBaseAdapter
+### Implement CalendarBaseAdapter ...
 
 ```java
     public class CustomCalendarAdapter extends CalendarBaseAdapter {
@@ -50,11 +50,12 @@ There is enough to download only the calendarview-library which contains all nec
         @Override
         public View getDateView(int position, View convertView, ViewGroup parent, CalendarDate calendarDate, int monthType) {
 
-            // Just the usual...
+            // Just an usual recycling implementation...
             if(convertView == null){
-                // ....
+                // .... inflating custim view for show days
             }
 
+            // Coloring by date
             Date currentDay = calendarDate.getDate();
             if(monthType == MONTH_TYPE_CURRENT) {   // Actual month
                 
@@ -78,8 +79,91 @@ There is enough to download only the calendarview-library which contains all nec
 
 ```
 
-### Controls and settings
+#### ... then make an instance and set it!
+```java
 
+    CustomCalendarAdapter calendarAdapter = new CustomCalendarAdapter(MainActivity.this);
+    CalendarView calendarView = (CalendarView) findViewById(R.id.calendar);
+                 calendarView.setAdapter(calendarAdapter);
+
+```
+
+
+### Settings
+
+#### First day is monday
+If you want to start the week on CalendarView, just set it using by setFirstDayMonday().
+
+```java
+    calendarView.setFirstDayMonday(true);
+```
+
+#### Text formatting for date label (at top of CalendarView)
+The CalendarView using the _yyyy. MMMM_ formula to date formatting. If you do not like it, then you 
+can change with the follow row:
+```java
+    calendarView.setDateTextFormat(new SimpleDateFormat("yyyy-MM", Locale.getDefault()));
+```
+
+#### Change the appearance of components of CalendarView
+It is possible to access the all UI components of CalendarView because of available via getters.
+
+```java
+    calendarView.getPrevButton();       // Jump to previously month button
+    calendarView.getNextButton();       // Jump to next month button
+    calendarView.getDateTextView();     // Actual date textview
+    calendarView.getDaysGridView();     // GridView with days of the week and other days
+```
+
+##### Structure
+```text
+    -------------------------------------
+    |       |                   |       |
+    | Prev  |       Date        | Next  |
+    |       |                   |       |
+    -------------------------------------
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |               Days                |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    -------------------------------------
+````
+
+### Controls
+
+#### Paging month
+```java
+    calendarView.showPrevMonth();
+    calendarView.showNextMonth();
+    calendarView.showDate(date);    // jump to date
+```
+
+
+### Events
+
+#### Calendar changed (month changed)
+```java
+    calendarView.setOnCalendarChangeListener(new CalendarView.OnCalendarChangeListener() {
+        public void onMonthChanged(int newYear, int newMonth) {
+
+        }
+    });
+```
+
+#### Choose a date (date clicked)
+```java
+    calendarView.setOnDateClickListener(new CalendarView.OnDateClickListener() {
+        public void onDateClick(Date date, View view) {
+
+        }
+    });
+```
 
 
 
@@ -88,3 +172,11 @@ There is enough to download only the calendarview-library which contains all nec
 ### How to hide days of the week?
 It's really easy, just you need to add an empty View in your CalendarAdapter.
 
+```java
+    @Override
+    public View getDateHeaderView(int position, View convertView, ViewGroup parent, CalendarDateHeader calendarDate) {
+
+        return new View();
+
+    }
+```
