@@ -7,6 +7,11 @@ AdapterView concept because I am using the GridView with smart populating.
 2 years ago I made a Calendar widget on Android which could be used several times. I decided to 
 clean the code and published. I hope to it will be useful.
 
+### Screenshots
+
+![alt text](https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_1.jpg "Sample 1")
+![alt text](https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_2.jpg "Sample 1")
+![alt text](https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_3.jpg "Sample 1")
 
 ## Usage
 
