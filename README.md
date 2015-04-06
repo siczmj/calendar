@@ -14,19 +14,20 @@ clean the code and published. I hope to it will be useful.
 
 There is enough to download only the calendarview-library which contains all neccessary files. If 
 your project already uses Gradle just insert the follow row at the dependencies:
-<pre><code>
+
+```text
  ... maven in progress, sorry ...
-</code></pre>
+```
 
 
 ### Add CalendarView to your layout XML
-<pre><code>
+```xml
     <com.nirigo.mobile.calendar.view.CalendarView
             android:id="@+id/calendar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
-</code></pre>
+```
 
 ### Implement CalendarBaseAdapter
 
