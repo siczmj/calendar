@@ -92,8 +92,8 @@ public class CustomCalendarAdapter extends CalendarBaseAdapter {
 
         int weatherValue = getWeather(currentDay);
 
-        holder.dayTextView.setText(String.valueOf(currentDayCalendar.get(Calendar.DAY_OF_MONTH))+"°");
-        holder.valueTextView.setText(weatherValue == Integer.MIN_VALUE ? "-" : String.valueOf(weatherValue));
+        holder.dayTextView.setText(String.valueOf(currentDayCalendar.get(Calendar.DAY_OF_MONTH)));
+        holder.valueTextView.setText(weatherValue == Integer.MIN_VALUE ? "-" : String.valueOf(weatherValue) + "°");
 
         // Coloring by month
         if(monthType == MONTH_TYPE_CURRENT) {
