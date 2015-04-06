@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">CalendarView</string>
-    <string name="example">Example of CalendarView</string>
+    <string name="app_name">CalendarView examples</string>
+    <string name="example">Example using </string>
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+    <string name="jump_hint">yyyyMM</string>
 </resources>

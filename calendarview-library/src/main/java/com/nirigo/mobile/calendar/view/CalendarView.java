@@ -21,6 +21,7 @@ import java.util.Locale;
 
 /**
  * Created by Sicz-Mesziár János on 2015.03.29..
+ * An new CalendarView using a flexible and customizable UI.
  */
 public class CalendarView extends RelativeLayout {
 
@@ -35,9 +36,6 @@ public class CalendarView extends RelativeLayout {
                          daysGridViewLayoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 
     private CalendarBaseAdapter mAdapter;
-
-    // Apperance -----------------------------
-
 
 
     // Defaults ------------------------------
@@ -149,6 +147,7 @@ public class CalendarView extends RelativeLayout {
     }
 
 
+    @SuppressWarnings("deprecation")
     private Button createButton(){
         Button b = new Button(getContext(), null, android.R.attr.borderlessButtonStyle);
         b.setId(ViewUtils.generateViewIdCompat());
@@ -183,7 +182,7 @@ public class CalendarView extends RelativeLayout {
             mAdapter.setDate(year, month);
             initDateText();
             if(onCalendarChangeListener != null)
-                onCalendarChangeListener.onMonthChanged(year, month);
+                onCalendarChangeListener.onMonthChanged(year, month+1);
         }
     }
 
@@ -232,6 +231,13 @@ public class CalendarView extends RelativeLayout {
 
     public void setOnCalendarChangeListener(OnCalendarChangeListener onCalendarChangeListener) {
         this.onCalendarChangeListener = onCalendarChangeListener;
+    }
+
+    public void setFirstDayMonday(boolean monday){
+        if(mAdapter != null) {
+            mAdapter.setFirstDayMonday(monday);
+            mAdapter.notifyDataSetChanged();
+        }
     }
 
     // Interfaces ----------------------------------------------------------------------------------
