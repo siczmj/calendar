@@ -37,7 +37,6 @@ your project already uses Gradle just insert the follow row at the dependencies:
         public CustomCalendarAdapter(Context context) {
             super(context);
         }
-
         
         @Override
         public View getDateHeaderView(int position, View convertView, ViewGroup parent, CalendarDateHeader calendarDate) {
@@ -54,12 +53,11 @@ your project already uses Gradle just insert the follow row at the dependencies:
                 // ....
             }
 
-
             Date currentDay = calendarDate.getDate();
             if(monthType == MONTH_TYPE_CURRENT) {   // Actual month
                 
-                if(isToday(currentDayCalendar)){                    
-                    
+                if(isToday(currentDay)){
+                    // Today
                 }else{                    
                     
                 }
@@ -78,10 +76,13 @@ your project already uses Gradle just insert the follow row at the dependencies:
 
 ```
 
+### Controls and settings
+
+
 
 
 ## Tips & Tricks
 
-### How to hide the days of the week?
+### How to hide days of the week?
 It's really easy, just you need to add an empty View in your CalendarAdapter.
 
