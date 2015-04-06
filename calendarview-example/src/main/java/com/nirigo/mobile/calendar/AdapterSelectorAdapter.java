@@ -7,8 +7,6 @@ import android.widget.BaseAdapter;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
-import java.lang.reflect.Type;
-
 /**
  * Created by Sicz-Mesziár János on 2015.04.06..
  * Just an adapter class for selection Adapter.

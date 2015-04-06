@@ -5,17 +5,14 @@ import android.graphics.Color;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.nirigo.mobile.calendar.view.CalendarAdapter;
 import com.nirigo.mobile.calendar.view.CalendarBaseAdapter;
 import com.nirigo.mobile.calendar.view.models.CalendarDate;
 import com.nirigo.mobile.calendar.view.models.CalendarDateHeader;
 
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
 
 /**
  * Created by Sicz-Mesziár János on 2015.04.06..
@@ -36,7 +33,7 @@ public class CustomCalendarAdapter extends CalendarBaseAdapter {
         inactiveText = Color.parseColor("#aaaaaa");
     }
 
-    // Weather login ---------------------
+    // Weather logic ---------------------
     public void addWeather(Date date, int value){
         weather.put(hash(date), value);
     }

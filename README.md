@@ -20,7 +20,7 @@ your project already uses Gradle just insert the follow row at the dependencies:
 ```
 
 
-### Add CalendarView to your layout XML
+### Add CalendarView to your XML layout
 ```xml
     <com.nirigo.mobile.calendar.view.CalendarView
             android:id="@+id/calendar"
@@ -31,7 +31,52 @@ your project already uses Gradle just insert the follow row at the dependencies:
 
 ### Implement CalendarBaseAdapter
 
-...
+```java
+    public class CustomCalendarAdapter extends CalendarBaseAdapter {
+
+        public CustomCalendarAdapter(Context context) {
+            super(context);
+        }
+
+        
+        @Override
+        public View getDateHeaderView(int position, View convertView, ViewGroup parent, CalendarDateHeader calendarDate) {
+
+            // Return the days of the weeks view
+
+        }
+
+        @Override
+        public View getDateView(int position, View convertView, ViewGroup parent, CalendarDate calendarDate, int monthType) {
+
+            // Just the usual...
+            if(convertView == null){
+                // ....
+            }
+
+
+            Date currentDay = calendarDate.getDate();
+            if(monthType == MONTH_TYPE_CURRENT) {   // Actual month
+                
+                if(isToday(currentDayCalendar)){                    
+                    
+                }else{                    
+                    
+                }
+                
+            }else if(monthType == MONTH_TYPE_PREVIOUSLY || monthType == MONTH_TYPE_NEXT) {
+                
+                // Previously or next month
+                
+            }
+
+            return convertView;
+        }
+        
+        ...
+    }
+
+```
 
 
 
