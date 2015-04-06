@@ -1,25 +1,23 @@
 # CalendarView
-A full customizable calendar widget for Android 4 and above. The main goal is to create a customized 
+Full customizable calendar widget for Android 4 and above. The main goal is to create a customized 
 calendar widget that is easy to use while it can be adapted for unique design. I follow the 
 AdapterView concept because I am using the GridView with smart populating.
 
 ### Motivation
-2 years ago I made a Calendar widget on Android which could be used several times. I decided to 
+In 2012, I made a Calendar widget to and Android application which could be used several times. I decided to
 clean the code and published. I hope to it will be useful.
 
 ### Screenshots
-
 <img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_1.jpg" width="230" />
 <img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_2.jpg" width="230" />
 <img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_3.jpg" width="230" />
 
+------
+
 ## Usage
 
 ### Download
-
-There is enough to download only the calendarview-library which contains all neccessary files. 
-
-
+There is enough to download only the calendarview-library which contains all neccessary files.
 
 
 ### Add CalendarView to your XML layout
@@ -32,7 +30,6 @@ There is enough to download only the calendarview-library which contains all nec
 ```
 
 ### Implement CalendarBaseAdapter ...
-
 ```java
     public class CustomCalendarAdapter extends CalendarBaseAdapter {
 
@@ -100,7 +97,7 @@ If you want to start the week on CalendarView, just set it using by setFirstDayM
 
 #### Text formatting for date label (at top of CalendarView)
 The CalendarView using the _yyyy. MMMM_ formula to date formatting. If you do not like it, then you 
-can change with the follow row:
+can change with the new SimpleDateFormat. [Here is the symbol meaning.](http://developer.android.com/reference/java/text/SimpleDateFormat.html)
 ```java
     calendarView.setDateTextFormat(new SimpleDateFormat("yyyy-MM", Locale.getDefault()));
 ```
@@ -114,8 +111,7 @@ It is possible to access the all UI components of CalendarView because of availa
     calendarView.getDateTextView();     // Actual date textview
     calendarView.getDaysGridView();     // GridView with days of the week and other days
 ```
-
-##### Structure
+Here is the structure to better understanding.
 ```text
     -------------------------------------
     |       |                   |       |
@@ -165,7 +161,7 @@ It is possible to access the all UI components of CalendarView because of availa
     });
 ```
 
-
+------
 
 ## Tips & Tricks
 
