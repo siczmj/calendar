@@ -9,9 +9,9 @@ clean the code and published. I hope to it will be useful.
 
 ### Screenshots
 
-![CalendarView sample 1](/siczmj/calendar/blob/master/screenshots/calendar_example_1.jpg =250x)
-![CalendarView sample 2](/siczmj/calendar/blob/master/screenshots/calendar_example_2.jpg =250x)
-![CalendarView sample 3](/siczmj/calendar/blob/master/screenshots/calendar_example_3.jpg =250x)
+![/siczmj/calendar/blob/master/screenshots/calendar_example_1.jpg|width=200]
+![/siczmj/calendar/blob/master/screenshots/calendar_example_2.jpg|width=200]
+![/siczmj/calendar/blob/master/screenshots/calendar_example_3.jpg|width=200]
 
 ## Usage
 
