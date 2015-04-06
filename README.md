@@ -12,12 +12,9 @@ clean the code and published. I hope to it will be useful.
 
 ### Prepare build.gradle
 
-There is enough to download only the calendarview-library which contains all neccessary files. If 
-your project already uses Gradle just insert the follow row at the dependencies:
+There is enough to download only the calendarview-library which contains all neccessary files. 
 
-```text
- ... maven in progress, sorry ...
-```
+
 
 
 ### Add CalendarView to your XML layout
