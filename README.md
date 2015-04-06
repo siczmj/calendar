@@ -9,9 +9,9 @@ clean the code and published. I hope to it will be useful.
 
 ### Screenshots
 
-<img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_1.jpg" width="200" />
-<img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_2.jpg" width="200" />
-<img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_3.jpg" width="200" />
+<img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_1.jpg" width="230" />
+<img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_2.jpg" width="230" />
+<img src="https://github.com/siczmj/calendar/blob/master/screenshots/calendar_example_3.jpg" width="230" />
 
 ## Usage
 
