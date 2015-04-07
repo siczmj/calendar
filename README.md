@@ -114,21 +114,21 @@ It is possible to access the all UI components of CalendarView because of availa
 Here is the structure to better understanding.
 ```text
     -------------------------------------
-    |       |                   |       |
+    |       |                   |       |       DaysGridView explain
     | Prev  |       Date        | Next  |
-    |       |                   |       |
-    -------------------------------------
-    |                                   |
-    |                                   |
-    |                                   |
-    |                                   |
-    |               Days                |
-    |                                   |
-    |                                   |
-    |                                   |
-    |                                   |
-    |                                   |
-    -------------------------------------
+    |       |                   |       |       --------------------------------------
+    -------------------------------------       | Mo | Tu | We | Th | Fr | Sat | Sun |
+    |                                   |       --------------------------------------
+    |                                   |       |  Days of prev. month |             |
+    |                                   |       |-----------------------             |
+    |                                   | >>>>  |                                    |
+    |               Days                |       |                                    |
+    |                                   |       |       Days of current month        |
+    |                                   |       |                                    |
+    |                                   |       |                                    |
+    |                                   |       |             -----------------------|
+    |                                   |       |             |  Days of next month  |
+    -------------------------------------       --------------------------------------
 ````
 
 ### Controls
@@ -176,3 +176,7 @@ It's really easy, just you need to add an empty View in your CalendarAdapter.
 
     }
 ```
+
+
+## License
+See the LICENSE file in the project root.
