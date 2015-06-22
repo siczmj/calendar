@@ -1,4 +1,4 @@
-package com.nirigo.mobile.calendar.view;
+package com.nirigo.mobile.view.calendar;
 
 import android.content.Context;
 import android.util.AttributeSet;

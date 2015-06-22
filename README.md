@@ -22,7 +22,7 @@ There is enough to download only the calendarview-library which contains all nec
 
 ### Add CalendarView to your XML layout
 ```xml
-    <com.nirigo.mobile.calendar.view.CalendarView
+    <com.nirigo.mobile.view.calendar.CalendarView
             android:id="@+id/calendar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -176,6 +176,12 @@ It's really easy, just you need to add an empty View in your CalendarAdapter.
 
     }
 ```
+
+
+## TODO
+
+- Store objects by date
+- AAR in maven repo
 
 
 ## License

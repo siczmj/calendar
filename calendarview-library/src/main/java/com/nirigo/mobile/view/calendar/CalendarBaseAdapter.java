@@ -1,4 +1,4 @@
-package com.nirigo.mobile.calendar.view;
+package com.nirigo.mobile.view.calendar;
 
 import android.content.Context;
 import android.view.View;
@@ -6,8 +6,8 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 
-import com.nirigo.mobile.calendar.view.models.CalendarDate;
-import com.nirigo.mobile.calendar.view.models.CalendarDateHeader;
+import com.nirigo.mobile.view.calendar.models.CalendarDate;
+import com.nirigo.mobile.view.calendar.models.CalendarDateHeader;
 
 import java.text.DateFormatSymbols;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.nirigo.mobile.calendar.view;
+package com.nirigo.mobile.view.calendar;
 
 import android.os.Build;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.nirigo.mobile.calendar.view.models;
+package com.nirigo.mobile.view.calendar.models;
 
 import java.util.Date;
 

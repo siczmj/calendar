@@ -1,4 +1,4 @@
-package com.nirigo.mobile.calendar.view.models;
+package com.nirigo.mobile.view.calendar.models;
 
 /**
  * Created by Sicz-Mesziár János on 2015.03.29..

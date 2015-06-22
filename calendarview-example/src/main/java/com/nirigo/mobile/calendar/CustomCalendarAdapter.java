@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.nirigo.mobile.calendar.view.CalendarBaseAdapter;
-import com.nirigo.mobile.calendar.view.models.CalendarDate;
-import com.nirigo.mobile.calendar.view.models.CalendarDateHeader;
+import com.nirigo.mobile.view.calendar.CalendarBaseAdapter;
+import com.nirigo.mobile.view.calendar.models.CalendarDate;
+import com.nirigo.mobile.view.calendar.models.CalendarDateHeader;
 
 import java.util.Calendar;
 import java.util.Date;

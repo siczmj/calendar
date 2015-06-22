@@ -1,4 +1,4 @@
-package com.nirigo.mobile.calendar.view;
+package com.nirigo.mobile.view.calendar;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -12,7 +12,7 @@ import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nirigo.mobile.calendar.view.models.CalendarDate;
+import com.nirigo.mobile.view.calendar.models.CalendarDate;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

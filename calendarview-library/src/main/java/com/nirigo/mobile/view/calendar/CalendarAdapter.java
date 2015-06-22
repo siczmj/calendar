@@ -1,4 +1,4 @@
-package com.nirigo.mobile.calendar.view;
+package com.nirigo.mobile.view.calendar;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.nirigo.mobile.calendar.view.models.CalendarDate;
-import com.nirigo.mobile.calendar.view.models.CalendarDateHeader;
+import com.nirigo.mobile.view.calendar.models.CalendarDate;
+import com.nirigo.mobile.view.calendar.models.CalendarDateHeader;
 
 import java.util.Calendar;
 

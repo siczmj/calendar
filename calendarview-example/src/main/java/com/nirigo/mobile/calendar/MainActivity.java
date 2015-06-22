@@ -12,9 +12,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.nirigo.mobile.calendar.view.CalendarAdapter;
-import com.nirigo.mobile.calendar.view.CalendarBaseAdapter;
-import com.nirigo.mobile.calendar.view.CalendarView;
+import com.nirigo.mobile.view.calendar.CalendarAdapter;
+import com.nirigo.mobile.view.calendar.CalendarBaseAdapter;
+import com.nirigo.mobile.view.calendar.CalendarView;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
